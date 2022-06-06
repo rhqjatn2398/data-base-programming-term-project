@@ -1,0 +1,22 @@
+.title{
+    width: 100%;
+    height: 50px;
+    border: 1px;
+}
+.content{
+    width: 100%;
+    height: 500px;
+    border: 1px;
+}
+.title_part{
+    border: 1px solid #000;
+}
+.content_part{
+    border: 1px solid #000;
+}
+.save{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+    float: right;
+}

@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    align-items: center;
+}
+.login_button{
+    width: 120px;
+    height: 45px;
+    border: 1px solid #000;
+}
+.signup_button{
+    width: 120px;
+    height: 45px;
+    border: 1px solid #000;
+}
