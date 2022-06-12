@@ -5,26 +5,28 @@
         <link rel="stylesheet" href="db.css">
         <title></title>
     </head>
-    <body>
+    <body bgcolor="black">
         <h1 class = "banner">여기는 배너자리
             <span class = "login">
                 <button onclick = "location.href = '/sports/login'">로그인</button>
+            </span>
+            <span class = "search">
+                <button onclick = "location.href = '/posts/search'">검색</button>
             </span>
         </h1>
         <div class = "content">
             <span class = "left">여기가 왼쪽</span>
             <span class = "mid">
-                <div>여기는 중앙</div>
-                <span>
-                    <button onclick = "location.href = '/sports/football'">축구</button>
-                    <button onclick = "location.href = '/sports/basketball'">농구</button>
-                    <button onclick = "location.href = '/sports/baseball'">야구</button>
+                <span class = "mid_content1">
+                    <button onclick = "location.href = '/posts/new?category=football'"><img src = "축구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=basketball'"><img src = "농구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=baseball'"><img src = "야구.png"></button>
                 </span>
                 <br>
-                <span>
-                    <button onclick = "location.href = '/sports/volleyball'">배구</button>
-                    <button onclick = "location.href = '/sports/danggu'">당구</button>
-                    <button onclick = "location.href = '/sports/joggu'">족구</button>
+                <span class = "mid_content2">
+                    <button onclick = "location.href = '/posts/new?category=volleyball'"><img src = "배구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=danggu'"><img src = "당구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=joggu'"><img src = "족구.png"></button>
                 </span>
             </span>
             <span class = "right">여기는 오른쪽</span>

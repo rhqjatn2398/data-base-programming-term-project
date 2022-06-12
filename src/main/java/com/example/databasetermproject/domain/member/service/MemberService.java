@@ -5,6 +5,8 @@ import com.example.databasetermproject.domain.member.repository.MemberRepository
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * @author Bumsoo
  * @version 1.0, 2022.6.6
@@ -23,6 +25,10 @@ public class MemberService {
         validateDuplicateLoginId(member);
         validateDuplicateNickname(member);
         return memberRepository.save(member);
+    }
+
+    public Optional<Member> findById(long id) {
+        return memberRepository.findById(id);
     }
 
     private void validateDuplicateLoginId(Member member) {

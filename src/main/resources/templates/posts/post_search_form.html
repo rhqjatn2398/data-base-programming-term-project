@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+  <form action="/posts/search" method="post">
+    <div class="content_part">
+      <p><label for="content">지역</label>
+        <input class=content type="text" id="area" name="area"
+               placeholder="지역을 입력하세요" size="100" maxlength="99">
+      </p>
+      <p><label for="content">내용</label>
+        <input class=content type="text" id="content" name="content"
+               placeholder="검색 내용을 입력하세요" size = "100" maxlength="99">
+      </p>
+      <p><label for="content">종목</label>
+        <input class=content type="text" id="category" name="category"
+               placeholder="검색 내용을 입력하세요" size = "100" maxlength="99">
+      </p>
+    </div>
+    <button type="submit">검색</button>
+  </form>
+</div>
+</body>
+</html>

@@ -2,6 +2,9 @@ package com.example.databasetermproject;
 
 import com.example.databasetermproject.domain.member.repository.JdbcTemplateMemberRepository;
 import com.example.databasetermproject.domain.member.repository.MemberRepository;
+import com.example.databasetermproject.repository.JdbcPostRepository;
+import com.example.databasetermproject.repository.PostRepository;
+import com.example.databasetermproject.service.PostService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,4 +23,16 @@ public class SpringConfig {
     public MemberRepository memberRepository() {
         return new JdbcTemplateMemberRepository(dataSource);
     }
+
+    @Bean
+    public PostService postService() {
+        return new PostService(postRepository());
+    }
+
+    @Bean
+    public PostRepository postRepository() {
+        return new JdbcPostRepository(dataSource);
+    }
+
 }
+

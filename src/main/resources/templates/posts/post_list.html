@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1><a href="/">검색 결과</a></h1>
+        <table border="1" width="50%" height="200" bordercolor="black">
+            <thead>
+            <tr>
+                <th>글 목록</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>작성자</td>
+                <td>제목</td>
+                <td>내용</td>
+                <td>장소</td>
+                <td>전화번호</td>
+                <td>종목</td>
+            </tr>
+            <tr th:each="post : ${posts}">
+                <td th:text="${post.name}"></td>
+                <td th:text="${post.title}"></td>
+                <td th:text="${post.content}"></td>
+                <td th:text="${post.area}"></td>
+                <td th:text="${post.phone}"></td>
+                <td th:text="${post.category}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
