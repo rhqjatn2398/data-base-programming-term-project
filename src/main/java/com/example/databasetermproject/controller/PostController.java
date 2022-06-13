@@ -35,7 +35,7 @@ public class PostController {
         post.setUid(loginMember.getId());
 
         postService.submitNewPost(post);
-        return "/main/db"; // 메인 화면으로 이동
+        return "redirect:/"; // 메인 화면으로 이동
     }
 
     @GetMapping(value = "/posts/new")

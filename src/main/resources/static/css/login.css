@@ -8,12 +8,10 @@
 }
 .login_button{
     width: auto;
-    border: 1px solid #000;
+    border-radius: 30px;
 }
 .signup_button{
-    width: auto;
-    border: 1px solid #000;
-    margin-left:-6px;
+    border-radius: 30px;
 }
 .login{
     color: white;

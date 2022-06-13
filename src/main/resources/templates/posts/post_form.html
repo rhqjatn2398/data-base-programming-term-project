@@ -4,11 +4,11 @@
     <link rel="stylesheet" th:href="@{/css/post_form.css}">
 </head>
 <body bgcolor="#EF904C">
-    <h1 class = "header">글 쓰기</h1>
+    <h1 class = "header" ><a href="/">글 쓰기</a></h1>
     <div class = "container">
         <form action="/posts/new" method="post">
           <div class="title_part">
-                <p><label for="title">제목</label>
+                <p><label for="title">제목</label><br>
                    <input class = title type="text", id="title" name="title"
                           placeholder="글 제목을 입력하세요" size = "100" maxlength="99">
                 </p>

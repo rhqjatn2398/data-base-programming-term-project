@@ -56,10 +56,10 @@ public class JdbcPostRepository implements PostRepository {
             sql += " and area like '%" + searchForm.getArea() + "%'";
         }
         if(searchForm.getCategory() != "") {
-            sql += " and category like '%" + searchForm.getArea() + "%'";
+            sql += " and category like '%" + searchForm.getCategory() + "%'";
         }
         if(searchForm.getContent() != "") {
-            sql += " and content like '%" + searchForm.getContent() + "%' ";
+            sql += " and post_content like '%" + searchForm.getContent() + "%'";
         }
 
         Connection conn = null;
