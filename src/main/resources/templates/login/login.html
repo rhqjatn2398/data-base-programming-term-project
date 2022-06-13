@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href= "/css/login.css">
     <title>Login</title>
 </head>
-<body>
-    <h1>Login</h1>
+<body bgcolor="#EF904C">
+    <h1 class = "login">Mak'gora Login</h1>
     <div class = main>
         <form action="/sports/login" method="post">
             <div class = "login_area">
-                <input type = "text" name = "loginId" value = "아이디를 입력해주세영"
+                <input type = "text" name = "loginId" value = "아이디를 입력해주세요."
                        size = "25" maxlength="15"><br>
-                <input type = "text" name = "password" value = "비번을 입력해주세영"
+                <input type = "text" name = "password" value = "비번을 입력해주세요."
                        size = "25" maxlength="15">
+                <br>
+                <button type="submit" class = "login_button">로그인하기</button>
             </div>
-            <button type="submit" class = "login_button">로그인하기</button>
         </form>
         <button onclick = "location.href = '/sports/signup'" class = "signup_button">회원가입</button>
     </div>

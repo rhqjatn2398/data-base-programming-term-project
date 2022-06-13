@@ -2,6 +2,7 @@ package com.example.databasetermproject.domain.member.controller;
 
 import com.example.databasetermproject.domain.member.Member;
 import com.example.databasetermproject.domain.member.service.MemberService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author Bumsoo
  * @version 1.0, 2022.6.6
  */
+@Slf4j
 @Controller
 @RequestMapping("/sports")
 public class MemberController {
@@ -40,6 +42,7 @@ public class MemberController {
         Member signupMember = memberService.join(member);
 
         if (signupMember == null) {
+            log.info("Signup 실패");
             return "/members/signup";
         }
 

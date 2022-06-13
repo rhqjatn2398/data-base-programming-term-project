@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http:/www.thymeleaf.org." xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" th:href="@{/css/post_form.css}">
 </head>
-<body>
-<div class="container">
-    <form action="/posts/new" method="post">
-        <div class="title_part">
-            <p><label for="title">제목</label>
-                <input class = title type="text", id="title" name="title"
-                       placeholder="글 제목을 입력하세요" size = "100" maxlength="99">
-            </p>
-        </div>
-        <div class="content_part">
-            <p><label for="content">지역</label>
+<body bgcolor="#EF904C">
+    <h1 class = "header">글 쓰기</h1>
+    <div class = "container">
+        <form action="/posts/new" method="post">
+          <div class="title_part">
+                <p><label for="title">제목</label>
+                   <input class = title type="text", id="title" name="title"
+                          placeholder="글 제목을 입력하세요" size = "100" maxlength="99">
+                </p>
+         </div>
+         <div class="content_part">
+            <p><label for="content">지역</label><br>
                 <input class=content type="text" id="area" name="area"
                        placeholder="지역을 입력하세요" size="100" maxlength="99">
             </p>
-            <p><label for="content">전화번호</label>
+            <p><label for="content">전화번호</label><br>
                 <input class=content type="text" id="phone" name="phone"
                        placeholder="글 내용을 입력하세요" size = "100" maxlength="99">
             </p>
-            <p><label for="content">내용</label>
+            <p><label for="content">내용</label><br>
                 <input class=content type="text" id="content" name="content"
                        placeholder="글 내용을 입력하세요" size = "100" maxlength="999">
             </p>
-            <p><label for="content">카테고리</label>
+            <p><label for="content">카테고리</label><br>
                 <input  class=content type="text" id="category" name="category"
                         th:value= "${data}" size = "100" maxlength="999">
             </p>
-        </div>
+         </div>
         <button type="submit">작성</button>
-        <button type="reset">취소</button>
+        <button class = "undo" type="reset">취소</button>
     </form>
 </div>
 </body>

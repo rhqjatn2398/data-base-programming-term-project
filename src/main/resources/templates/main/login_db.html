@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset = "UTF-8">
+  <link rel="stylesheet" th:href="@{/css/login_db.css}">
+  <title></title>
+</head>
+<body bgcolor="#EF904C">
+<h1 class = "banner">Mak'gora
+  <span class = "login">
+                <div th:text="${loginMember.name} + '님, 안녕하세요!'"></div>
+                <button onclick = "location.href = '/sports/logout'">로그아웃</button>
+            </span>
+    <span class = "search">
+                <button onclick = "location.href = '/posts/search'">검색</button>
+    </span>
+</h1>
+<div class = "content">
+    <span class = "left"></span>
+    <span class = "mid">
+        <div class = "mid_content1">
+                    <button onclick = "location.href = '/posts/new?category=football'"><img src = "../../static/img/축구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=basketball'"><img src = "../../static/img/농구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=baseball'"><img src = "../../static/img/야구.png"></button>
+        </div>
+                <br>
+                <div class = "mid_content2">
+                    <button onclick = "location.href = '/posts/new?category=volleyball'"><img src = "../../static/img/배구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=danggu'"><img src = "../../static/img/당구.png"></button>
+                    <button onclick = "location.href = '/posts/new?category=joggu'"><img src = "../../static/img/족구.png"></button>
+                </div>
+        </span>
+    </span>
+    <span class = "right"></span>
+</div>
+</body>
+</html>

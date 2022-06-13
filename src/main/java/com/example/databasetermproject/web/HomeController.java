@@ -13,11 +13,11 @@ public class HomeController {
     public String home(@SessionAttribute(value = SessionConst.LOGIN_MEMBER, required = false) Member loginMember, Model model) {
 
         if (loginMember == null) {
-            return "db";
+            return "/main/db";
         }
 
         model.addAttribute("loginMember", loginMember);
 
-        return "login_db";
+        return "/main/login_db";
     }
 }
