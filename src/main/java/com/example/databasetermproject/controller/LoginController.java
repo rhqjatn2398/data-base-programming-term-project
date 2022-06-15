@@ -1,7 +1,7 @@
-package com.example.databasetermproject.domain.login.controller;
+package com.example.databasetermproject.controller;
 
-import com.example.databasetermproject.domain.login.service.LoginService;
-import com.example.databasetermproject.domain.member.Member;
+import com.example.databasetermproject.service.LoginService;
+import com.example.databasetermproject.domain.Member;
 import com.example.databasetermproject.web.SessionConst;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

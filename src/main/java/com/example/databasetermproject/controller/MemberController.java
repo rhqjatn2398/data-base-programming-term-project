@@ -1,7 +1,7 @@
-package com.example.databasetermproject.domain.member.controller;
+package com.example.databasetermproject.controller;
 
-import com.example.databasetermproject.domain.member.Member;
-import com.example.databasetermproject.domain.member.service.MemberService;
+import com.example.databasetermproject.domain.Member;
+import com.example.databasetermproject.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

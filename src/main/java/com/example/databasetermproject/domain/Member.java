@@ -1,4 +1,4 @@
-package com.example.databasetermproject.domain.member;
+package com.example.databasetermproject.domain;
 
 import lombok.Data;
 

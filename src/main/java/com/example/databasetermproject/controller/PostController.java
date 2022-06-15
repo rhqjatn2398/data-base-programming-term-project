@@ -1,8 +1,8 @@
 package com.example.databasetermproject.controller;
 
 import com.example.databasetermproject.domain.Post;
-import com.example.databasetermproject.domain.member.Member;
-import com.example.databasetermproject.domain.member.service.MemberService;
+import com.example.databasetermproject.domain.Member;
+import com.example.databasetermproject.service.MemberService;
 import com.example.databasetermproject.service.PostService;
 import com.example.databasetermproject.web.SessionConst;
 import lombok.extern.slf4j.Slf4j;

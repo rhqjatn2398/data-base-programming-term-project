@@ -1,4 +1,4 @@
-package com.example.databasetermproject.domain.login.controller;
+package com.example.databasetermproject.controller;
 
 import lombok.Data;
 

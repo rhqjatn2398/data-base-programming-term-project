@@ -1,6 +1,6 @@
 package com.example.databasetermproject.web;
 
-import com.example.databasetermproject.domain.member.Member;
+import com.example.databasetermproject.domain.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

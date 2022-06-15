@@ -1,12 +1,11 @@
-package com.example.databasetermproject.domain.login.service;
+package com.example.databasetermproject.service;
 
-import com.example.databasetermproject.domain.member.Member;
-import com.example.databasetermproject.domain.member.repository.MemberRepository;
+import com.example.databasetermproject.domain.Member;
+import com.example.databasetermproject.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-import java.util.function.Predicate;
 
 /**
  * @author Bumsoo

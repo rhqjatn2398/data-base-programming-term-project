@@ -1,6 +1,8 @@
 package com.example.databasetermproject.domain.member.repository;
 
-import com.example.databasetermproject.domain.member.Member;
+import com.example.databasetermproject.domain.Member;
+import com.example.databasetermproject.repository.JdbcTemplateMemberRepository;
+import com.example.databasetermproject.repository.MemberRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

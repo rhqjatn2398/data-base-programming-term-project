@@ -1,7 +1,7 @@
 package com.example.databasetermproject;
 
-import com.example.databasetermproject.domain.member.repository.JdbcTemplateMemberRepository;
-import com.example.databasetermproject.domain.member.repository.MemberRepository;
+import com.example.databasetermproject.repository.JdbcTemplateMemberRepository;
+import com.example.databasetermproject.repository.MemberRepository;
 import com.example.databasetermproject.repository.JdbcPostRepository;
 import com.example.databasetermproject.repository.PostRepository;
 import com.example.databasetermproject.service.PostService;

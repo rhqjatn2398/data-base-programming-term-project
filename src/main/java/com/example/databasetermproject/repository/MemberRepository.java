@@ -1,7 +1,7 @@
-package com.example.databasetermproject.domain.member.repository;
+package com.example.databasetermproject.repository;
 
 
-import com.example.databasetermproject.domain.member.Member;
+import com.example.databasetermproject.domain.Member;
 
 import java.util.Optional;
 
