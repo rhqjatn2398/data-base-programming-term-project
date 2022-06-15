@@ -43,10 +43,10 @@ public class MemberController {
 
         if (signupMember == null) {
             log.info("Signup 실패");
-            return "/members/signup";
+            return "redirect:/sports/signup";
         }
 
-        return "redirect:/";
+        return "redirect:/sports/login";
     }
 
 }
